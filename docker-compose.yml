@@ -6,7 +6,6 @@ services:
     container_name: base-lamp-mysql
     volumes:
       - db_data:/var/lib/mysql
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 'password'
 
@@ -17,12 +16,10 @@ services:
     container_name: base-lamp-phpmyadmin
     environment:
       PMA_HOST: mysql
-    restart: always
     ports:
       - "8080:80"
 
   php-apache:
-    # build: ./docker/php-apache
     build:
         context: ./
         dockerfile: ./docker/php-apache/Dockerfile
