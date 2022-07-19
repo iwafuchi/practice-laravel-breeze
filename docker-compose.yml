@@ -7,7 +7,7 @@ services:
       dockerfile: ./docker/mysql/Dockerfile
     container_name: lamp-based-mysql
     volumes:
-      - example_lamp_db_data:/var/lib/mysql
+      - example_lamp_data_store:/var/lib/mysql
 
   phpmyadmin:
     depends_on:
@@ -35,4 +35,4 @@ services:
       - mysql
 
 volumes:
-    example_lamp_db_data: {}
+    example_lamp_data_store: {}
