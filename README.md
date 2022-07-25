@@ -10,12 +10,12 @@ chown -R myusername:mygroupname your_project_name
 chmod -R 777 storage
 
 ## Breeze install
-composer require laravel/breeze --dev
-php artisan breeze:install
-npm install
-npm run dev
-php artisan migrate
-npm run build
+composer require laravel/breeze --dev<br>
+php artisan breeze:install<br>
+npm install<br>
+npm run dev<br>
+php artisan migrate<br>
+npm run build<br>
 
 ## 参考資料
 https://readouble.com/laravel/9.x/ja/releases.html
