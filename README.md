@@ -17,5 +17,11 @@ npm run dev<br>
 php artisan migrate<br>
 npm run build<br>
 
+## Add locales
+php artisan lang:add ja
+
+## Update locales
+php artisan lang:update
+
 ## 参考資料
 https://readouble.com/laravel/9.x/ja/releases.html
