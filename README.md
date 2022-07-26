@@ -24,9 +24,6 @@ php artisan lang:add ja
 ## Update locales
 php artisan lang:update
 
-## Multi Auth
-php artisan make:model Admin -m
-
 ## 参考資料
 https://readouble.com/laravel/9.x/ja/releases.html<br>
 https://publisher.laravel-lang.com/
